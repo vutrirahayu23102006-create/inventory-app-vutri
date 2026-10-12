@@ -1,0 +1,4 @@
+config/database.php
+logs/
+.DS_Store
+Thumbs.db
