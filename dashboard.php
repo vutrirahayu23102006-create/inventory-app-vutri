@@ -395,11 +395,26 @@ function rupiah($number): string
         <a href="products/stock.php">⇅ Stok Masuk/Keluar</a>
         <a href="products/movements.php">◷ Riwayat Stok</a>
         <a href="reports/index.php">Laporan Inventaris</a>
+        
 
         <div class="menu-label" style="grid-column:1/-1">Master Data</div>
 
         <a href="categories/index.php">▣ Kategori</a>
         <a href="suppliers/index.php">♙ Supplier</a>
+        
+<?php if (isAdmin()): ?>
+    <a href="/inventory-app-vutri/users/create.php"
+       style="display:inline-block;
+              background:#f28c28;
+              color:white;
+              padding:10px 16px;
+              border-radius:6px;
+              text-decoration:none;
+              margin:5px;">
+        + Tambah Pengguna
+    </a>
+<?php endif; ?>
+
 
         <div class="menu-label" style="grid-column:1/-1">Akun</div>
 
